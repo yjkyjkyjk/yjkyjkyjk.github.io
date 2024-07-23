@@ -16,21 +16,27 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="Once you’ve built a blog with Hexo and Fluid themes, you can’t wait to spruce it up a bit. Here are some ways to modify ICONS, backgrounds, and loading GIFs change the imgFirst, you can put the image">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2024/07/21/hello-world/index.html">
+<meta property="og:title" content="Decorate Your Blog">
+<meta property="og:url" content="http://example.com/2024/07/23/Decorate-Your-Blog/index.html">
 <meta property="og:site_name" content="YJK&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Once you’ve built a blog with Hexo and Fluid themes, you can’t wait to spruce it up a bit. Here are some ways to modify ICONS, backgrounds, and loading GIFs change the imgFirst, you can put the image">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-07-21T13:16:46.262Z">
-<meta property="article:modified_time" content="2024-07-21T13:16:46.262Z">
+<meta property="og:image" content="http://example.com/image/QQ_1721730495293.png">
+<meta property="og:image" content="http://example.com/image/xiaobai.gif">
+<meta property="og:image" content="http://example.com/image/QQ_1721733720612.png">
+<meta property="article:published_time" content="2024-07-23T10:18:39.000Z">
+<meta property="article:modified_time" content="2024-07-23T11:24:21.105Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/image/QQ_1721730495293.png">
   
   
   
-  <title>Hello World - YJK&#39;s blog</title>
+  <title>Decorate Your Blog - YJK&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -225,7 +231,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="Decorate Your Blog"></span>
           
         </div>
 
@@ -236,8 +242,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-21 21:16" pubdate>
-          July 21, 2024 pm
+        <time datetime="2024-07-23 18:18" pubdate>
+          July 23, 2024 pm
         </time>
       </span>
     
@@ -248,7 +254,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          18 words
+          128 words
         
       </span>
     
@@ -259,7 +265,7 @@
         
         
         
-          1 mins
+          2 mins
         
       </span>
     
@@ -319,24 +325,24 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">Decorate Your Blog</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <p>Once you’ve built a blog with Hexo and Fluid themes, you can’t wait to spruce it up a bit. Here are some ways to modify ICONS, backgrounds, and loading GIFs</p>
+<h3 id="change-the-img"><a href="#change-the-img" class="headerlink" title="change the img"></a>change the img</h3><p>First, you can put the image you want to replace into the <em>fluid&#x2F;source&#x2F;img</em> directory and change the location of the image reference in the <em>_config.yml</em> file in the <em>fluid</em> directory</p>
+<p><img src="/image/QQ_1721730495293.png" srcset="/img/xiaobai.gif" lazyload></p>
+<p>For example, I replaced fluid.png with moca.png, and replaced loading.gif with xiaobai.gif</p>
+<p><img src="/image/xiaobai.gif" srcset="/img/xiaobai.gif" lazyload alt="&quot;Why this image still loading?&quot;"></p>
+<h3 id="Random-background-picture"><a href="#Random-background-picture" class="headerlink" title="Random background picture"></a>Random background picture</h3><p>Create a new <em>random-bg</em> directory under <em>fluid\source\img</em>, and put your favorite background images in it</p>
+<p>Edit the <em>banner.ejs</em> file in the <em>blog\themes\fluid\layout_partials\header</em> path</p>
+<p><img src="/image/QQ_1721733720612.png" srcset="/img/xiaobai.gif" lazyload></p>
+<p>Add the following code at the end of the file</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs js">&lt;script&gt;<br>  <span class="hljs-keyword">function</span> <span class="hljs-title function_">getRandomNumber</span>(<span class="hljs-params">min, max</span>) &#123;<br>    min = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">ceil</span>(min);<br>    max = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(max);<br>    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * (max - min + <span class="hljs-number">1</span>)) + min;<br>  &#125;<br><br><br><span class="hljs-keyword">var</span> randomNum = <span class="hljs-title function_">getRandomNumber</span>(<span class="hljs-number">0</span>, <span class="hljs-number">8</span>).<span class="hljs-title function_">toString</span>();<br><span class="hljs-keyword">var</span> banner_img = <span class="hljs-string">&quot;/img/random-bg/&quot;</span> + randomNum + <span class="hljs-string">&quot;.avif&quot;</span>;<br><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;banner&#x27;</span>).<span class="hljs-title function_">removeAttribute</span>(<span class="hljs-string">&#x27;style&#x27;</span>)<br><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;banner&#x27;</span>).<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">&#x27;style&#x27;</span>,<span class="hljs-string">`background: url(&#x27;<span class="hljs-subst">$&#123;banner_img&#125;</span>&#x27;) no-repeat center center; background-size: cover;`</span>)<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>Note that the name and suffix of the image in the path must be correct</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://linguoguang.com/2023/05/10/Hexo_Fluid%E9%9A%8F%E6%9C%BA%E8%83%8C%E6%99%AF%E5%9B%BE%E5%AE%9E%E7%8E%B0/">https://linguoguang.com/2023/05/10/Hexo_Fluid%E9%9A%8F%E6%9C%BA%E8%83%8C%E6%99%AF%E5%9B%BE%E5%AE%9E%E7%8E%B0/</a></p>
 
                 
               </div>
@@ -345,6 +351,36 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Programming-practice/" class="category-chain-item">Programming practice</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/web/" class="print-no-link">#web</a>
+      
+        <a href="/tags/JavaScript/" class="print-no-link">#JavaScript</a>
+      
+    </div>
   
 </div>
 
@@ -354,8 +390,8 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2024/07/21/hello-world/</div>
+      <div>Decorate Your Blog</div>
+      <div>http://example.com/2024/07/23/Decorate-Your-Blog/</div>
     </div>
     <div class="license-meta">
       
@@ -367,7 +403,7 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>July 21, 2024</div>
+          <div>July 23, 2024</div>
         </div>
       
       
@@ -399,15 +435,15 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/07/22/Build%20up%20blog%20site%20using%20GitHub%20and%20Hexo/" title="Build up blog site using GitHub and Hexo">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Build up blog site using GitHub and Hexo</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2024/07/22/Build%20up%20blog%20site%20using%20GitHub%20and%20Hexo/" title="Build up blog site using GitHub and Hexo">
+                        <span class="hidden-mobile">Build up blog site using GitHub and Hexo</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

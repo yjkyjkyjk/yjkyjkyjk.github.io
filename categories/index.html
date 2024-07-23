@@ -227,6 +227,21 @@
   </div>
 </div>
 
+<script>
+  function getRandomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+
+var randomNum = getRandomNumber(0, 8).toString();
+var banner_img = "/img/random-bg/" + randomNum + ".avif";
+document.getElementById('banner').removeAttribute('style')
+document.getElementById('banner').setAttribute('style',`background: url('${banner_img}') no-repeat center center; background-size: cover;`)
+
+
+</script>
 </div>
 
   </header>
@@ -265,7 +280,7 @@
       
         <a href="/categories/Programming-practice/" class="category-count col-2 col-md-1 col-xm-1">
           <i class="iconfont icon-articles"></i>
-          <span>1</span>
+          <span>2</span>
         </a>
       
       <div class="category-collapse collapse " id="collapse-db08ab448add63d53fa8da43cf0862a0"
@@ -275,6 +290,15 @@
           
   <div class="category-post-list">
     
+    
+      
+      
+        <a href="/2024/07/23/Decorate-Your-Blog/" title="Decorate Your Blog"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Decorate Your Blog</span>
+        </a>
+      
     
       
       
