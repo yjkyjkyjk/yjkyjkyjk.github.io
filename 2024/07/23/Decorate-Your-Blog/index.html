@@ -27,10 +27,10 @@
 <meta property="og:image" content="http://example.com/image/xiaobai.gif">
 <meta property="og:image" content="http://example.com/image/QQ_1721733720612.png">
 <meta property="article:published_time" content="2024-07-23T10:18:39.000Z">
-<meta property="article:modified_time" content="2024-07-23T11:24:21.105Z">
+<meta property="article:modified_time" content="2024-07-24T09:01:26.459Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="JavaScript">
 <meta property="article:tag" content="web">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/image/QQ_1721730495293.png">
   
@@ -359,7 +359,7 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
     
       <span class="category-chain">
         
-  <a href="/categories/Programming-practice/" class="category-chain-item">Programming practice</a>
+  <a href="/categories/programming-practice/" class="category-chain-item">programming practice</a>
   
   
 
@@ -374,9 +374,9 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/JavaScript/" class="print-no-link">#JavaScript</a>
-      
         <a href="/tags/web/" class="print-no-link">#web</a>
+      
+        <a href="/tags/JavaScript/" class="print-no-link">#JavaScript</a>
       
     </div>
   
@@ -532,6 +532,12 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -750,6 +756,49 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/leancloud.js" ></script>
 
