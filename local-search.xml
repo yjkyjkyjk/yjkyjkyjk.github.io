@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Add a music player in your Hexo blog</title>
+    <link href="/2024/07/24/Add-a-music-player-in-your-Hexo-blog/"/>
+    <url>/2024/07/24/Add-a-music-player-in-your-Hexo-blog/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Add-a-music-player-in-your-Hexo-blog"><a href="#Add-a-music-player-in-your-Hexo-blog" class="headerlink" title="Add a music player in your Hexo blog"></a>Add a music player in your Hexo blog</h2><p>This article will introduce how to add a music player in your Hexo blog using the external link player provided by the music platform.</p><h3 id="external-link-player"><a href="#external-link-player" class="headerlink" title="external link player"></a>external link player</h3><p>This method is very simple. Just use a third-party music platform to find the songs you like, then generate a code for an external link player and insert it into the desired place on your blog.</p><p>For example, we can find any song or song list on music.163.com that does not require VIP and click on <em>Generate External Link Player</em>.</p><p><img src="/image/QQ_1721820058144.png" alt="修瓦修瓦"></p><p>Copy the generated HTML code.</p><p><img src="/image/QQ_1721820251140.png"></p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;iframe <span class="hljs-attribute">frameborder</span>=<span class="hljs-string">&quot;no&quot;</span> <span class="hljs-attribute">border</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attribute">marginwidth</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attribute">marginheight</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attribute">width</span>=330 <span class="hljs-attribute">height</span>=86 <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;//music.163.com/outchain/player?type=2&amp;id=1846310505&amp;auto=1&amp;height=66&quot;</span>&gt;&lt;/iframe&gt;<br></code></pre></td></tr></table></figure><p>Then place it in the position you want, such as at the footer of the page. Just select a place in <em>blog\themes\fluid\layout_partials</em></p><p>You can also paste it in your markdown post like this:</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1846310505&auto=1&height=66"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=2869389178&auto=1&height=90"></iframe><h3 id="Hexo-Tag-Aplayer"><a href="#Hexo-Tag-Aplayer" class="headerlink" title="Hexo-Tag-Aplayer"></a>Hexo-Tag-Aplayer</h3><p>You can also use the hexo-tag-aplayer plugin to add a music player in your blog. Since my hexo version is relatively low, I won’t go into detail about it.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://blog.csdn.net/weixin_58068682/article/details/116612364">https://blog.csdn.net/weixin_58068682/article/details/116612364</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>programming practice</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>web</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>How to enable markdown mathematical formula rendering in hexo blog</title>
     <link href="/2024/07/24/How-to-enable-markdown-mathematical-formula-rendering-in-hexo-blog/"/>
     <url>/2024/07/24/How-to-enable-markdown-mathematical-formula-rendering-in-hexo-blog/</url>
@@ -87,7 +112,7 @@
     <link href="/2024/07/23/Weight-Record/"/>
     <url>/2024/07/23/Weight-Record/</url>
     
-    <content type="html"><![CDATA[<h3 id="Weight-chart"><a href="#Weight-chart" class="headerlink" title="Weight chart"></a>Weight chart</h3><table><thead><tr><th>Date</th><th>Weight (kg)</th><th>Running (km)</th><th>Cycling (km)</th><th>remark</th></tr></thead><tbody><tr><td>2024.7.23</td><td>93.2</td><td>2.34</td><td>8.11</td><td>have a little cold</td></tr><tr><td>2024.7.24</td><td>92.3</td><td>4.42</td><td></td><td>still have a little cough</td></tr><tr><td>2024.7.25</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.26</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.27</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.28</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.29</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.30</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.31</td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Weight-chart"><a href="#Weight-chart" class="headerlink" title="Weight chart"></a>Weight chart</h3><table><thead><tr><th>Date</th><th>Weight (kg)</th><th>Running (km)</th><th>Cycling (km)</th><th>remark</th></tr></thead><tbody><tr><td>2024.7.23</td><td>93.2</td><td>2.34</td><td>8.11</td><td>have a little cold</td></tr><tr><td>2024.7.24</td><td>92.3</td><td>4.42</td><td>14.4</td><td>still have a little cough</td></tr><tr><td>2024.7.25</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.26</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.27</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.28</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.29</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.30</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.31</td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
     
     
     <categories>
