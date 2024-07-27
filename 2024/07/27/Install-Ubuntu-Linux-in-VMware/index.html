@@ -23,13 +23,18 @@
 <meta property="og:site_name" content="YJK&#39;s blog">
 <meta property="og:description" content="Install Ubuntu Linux in VMwareInstalling the Linux operating system on a virtual machine is simpler and more convenient to use than installing it on a physical machine. Although it runs much slower th">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2024/07/27/Install-Ubuntu-Linux-in-VMware/QQ_1722079371091.png">
-<meta property="og:image" content="http://example.com/2024/07/27/Install-Ubuntu-Linux-in-VMware/QQ_1722079813704.png">
+<meta property="og:image" content="http://example.com/image/QQ_1722079371091.png">
+<meta property="og:image" content="http://example.com/image/QQ_1722079813704.png">
+<meta property="og:image" content="http://example.com/image/QQ_1722080370769.png">
+<meta property="og:image" content="http://example.com/image/QQ_1722080491096.png">
+<meta property="og:image" content="http://example.com/image/QQ_1722080692443.png">
+<meta property="og:image" content="http://example.com/image/QQ_1722081145510.png">
+<meta property="og:image" content="http://example.com/image/QQ_1722081385587.png">
 <meta property="article:published_time" content="2024-07-27T11:04:39.000Z">
-<meta property="article:modified_time" content="2024-07-27T11:32:38.037Z">
+<meta property="article:modified_time" content="2024-07-27T12:03:10.104Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2024/07/27/Install-Ubuntu-Linux-in-VMware/QQ_1722079371091.png">
+<meta name="twitter:image" content="http://example.com/image/QQ_1722079371091.png">
   
   
   
@@ -251,7 +256,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          39 words
+          60 words
         
       </span>
     
@@ -331,12 +336,24 @@ document.getElementById('banner').setAttribute('style',`background: url('${banne
 <p>Here is how to install Ubuntu Linux on VMware.</p>
 <h3 id="Download-VMware-Workstation"><a href="#Download-VMware-Workstation" class="headerlink" title="Download VMware Workstation"></a>Download VMware Workstation</h3><p>download link: <a target="_blank" rel="noopener" href="https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro">https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro</a></p>
 <p>Before browsing the webpage, we need register an account and log in.</p>
-<p><img src="QQ_1722079371091.png" srcset="/img/xiaobai.gif" lazyload alt="Alt text"></p>
+<p><img src="/image/QQ_1722079371091.png" srcset="/img/xiaobai.gif" lazyload></p>
 <p>Click “VMware Workstation Pro 17.0 for Personal Use(Windows)” and download the latest version.</p>
 <p>We need to complete the personal profile information before downloading.</p>
-<p><img src="QQ_1722079813704.png" srcset="/img/xiaobai.gif" lazyload alt="Alt text"></p>
+<p><img src="/image/QQ_1722079813704.png" srcset="/img/xiaobai.gif" lazyload></p>
 <p>Click the download button and wait for a few minutes.</p>
-<h3 id="Install-VMware"><a href="#Install-VMware" class="headerlink" title="Install VMware"></a>Install VMware</h3><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_70885101/article/details/137694608">https://blog.csdn.net/m0_70885101/article/details/137694608</a></p>
+<h3 id="Install-VMware"><a href="#Install-VMware" class="headerlink" title="Install VMware"></a>Install VMware</h3><p>Run the exe file we have downloaded to install VMware.</p>
+<p>Choose the installation location.<br><img src="/image/QQ_1722080370769.png" srcset="/img/xiaobai.gif" lazyload></p>
+<p>Add to system path.<br><img src="/image/QQ_1722080491096.png" srcset="/img/xiaobai.gif" lazyload></p>
+<p>After installation is complete, check “Personal Use”, no license required.</p>
+<p><img src="/image/QQ_1722080692443.png" srcset="/img/xiaobai.gif" lazyload alt="installed successfully"></p>
+<h3 id="Check-the-network-adapter"><a href="#Check-the-network-adapter" class="headerlink" title="Check the network adapter"></a>Check the network adapter</h3><p>After installing VMware, it is necessary to confirm whether your computer has installed two network adapters: <code>VMware Network Adapter VMnet1</code> and <code>VMware Network Adapter VMnet8</code>.</p>
+<p>Enter <code>ipconfig</code> in the cmd window to view network configuration.</p>
+<p>Here we can see these two network adapters.<br><img src="/image/QQ_1722081145510.png" srcset="/img/xiaobai.gif" lazyload></p>
+<p>If you cannot find these two network adapters, you may need to uninstall and reinstall VMware.</p>
+<h3 id="Download-Ubuntu"><a href="#Download-Ubuntu" class="headerlink" title="Download Ubuntu"></a>Download Ubuntu</h3><p>download link: <a target="_blank" rel="noopener" href="https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop</a></p>
+<p>Download the latest version of Ubuntu.<br><img src="/image/QQ_1722081385587.png" srcset="/img/xiaobai.gif" lazyload></p>
+<p>Be patient and wait.</p>
+<h3 id="Create-a-new-virtual-machine"><a href="#Create-a-new-virtual-machine" class="headerlink" title="Create a new virtual machine"></a>Create a new virtual machine</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_70885101/article/details/137694608">https://blog.csdn.net/m0_70885101/article/details/137694608</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/SHERLOCK0226/article/details/139748840">https://blog.csdn.net/SHERLOCK0226/article/details/139748840</a></p>
 
                 
