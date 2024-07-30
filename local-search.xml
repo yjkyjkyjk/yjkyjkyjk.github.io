@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Ex1 - An Introduction to Parallel Programming</title>
+    <link href="/2024/07/30/Ex1-An-Introduction-to-Parallel-Programming/"/>
+    <url>/2024/07/30/Ex1-An-Introduction-to-Parallel-Programming/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Ex1-An-Introduction-to-Parallel-Programming"><a href="#Ex1-An-Introduction-to-Parallel-Programming" class="headerlink" title="Ex1 - An Introduction to Parallel Programming"></a>Ex1 - An Introduction to Parallel Programming</h2><h3 id="1-1"><a href="#1-1" class="headerlink" title="1.1"></a>1.1</h3><p>Q: Devise formulas for the functions that calculate my_first_i and my_last_i in the global sum example. Remember that each core should be assigned roughly the same number of elements of computations in the loop. Hint: First consider the case when n is evenly divisible by p.</p><p>A:</p><p>$id &#x3D; get_thread_num()$</p><p>$base &#x3D; (n + p - 1) &#x2F; p &#x3D; \lceil \frac{n}{p} \rceil$</p><p>$my_fisrt_i &#x3D; base * id$</p><p>$my_last_i &#x3D; min{base * (id+1),\  n}$</p><p>In this way, the number of elements of computations assigned on the last kernel may be a little bit smaller than other core (no more than p). Since p &lt;&lt; n, this difference can be ignored.</p><h3 id="1-2"><a href="#1-2" class="headerlink" title="1.2"></a>1.2</h3><p>Q: We’ve implicitly assumed that each call to Compute_next_value requires roughly the same amount of work as the other calls. How would you change your answer to the preceding question if call i &#x3D; k requires k + 1 times as much work as the call with i &#x3D; 0? So if the first call (i &#x3D; 0) requires 2 milliseconds, the second call (i &#x3D; 1) requires 4, the third (i &#x3D; 2) requires 6, and so on.</p><p>A:</p><p>Assume that the function call cost 1 time when i&#x3D;0.</p><p>We can divide n calls into n&#x2F;2 pairs:</p><p>${1, n}$, ${2, n-1}$, ${3, n-2}$, … ${n&#x2F;2+1 (when\ n\ is\ odd)}$ or ${n&#x2F;2, n&#x2F;2+1 (when\ n\ is<br>\ even)}$</p><p>The cost in any pair is $n+1$.</p><p>The number of elements of calculations is the same for each pair (except when $n$ is odd, $n&#x2F;2+1$ cannot be paired).</p><p>So we can assign tasks like we did in the first question for each core. Each time the $i$-th call is evaluated, the $(n-i)$-th call should also be evaluated.</p><h3 id="1-3"><a href="#1-3" class="headerlink" title="1.3"></a>1.3</h3><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://github.com/rootusercop/An-Introduction-to-Parallel-Programming">https://github.com/rootusercop/An-Introduction-to-Parallel-Programming</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>programming practice</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hpc</tag>
+      
+      <tag>parallel programming</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Install Ubuntu Linux in VMware</title>
     <link href="/2024/07/27/Install-Ubuntu-Linux-in-VMware/"/>
     <url>/2024/07/27/Install-Ubuntu-Linux-in-VMware/</url>
@@ -184,7 +211,7 @@
     <link href="/2024/07/23/Weight-Record/"/>
     <url>/2024/07/23/Weight-Record/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Weight-chart"><a href="#Weight-chart" class="headerlink" title="Weight chart"></a>Weight chart</h3><table><thead><tr><th>Date</th><th>Weight (kg)</th><th>Running (km)</th><th>Cycling (km)</th><th>remark</th></tr></thead><tbody><tr><td>2024.7.23</td><td>93.2</td><td>2.34</td><td>8.11</td><td>have a little cold</td></tr><tr><td>2024.7.24</td><td>92.3</td><td>4.42</td><td>14.4</td><td>still have a little cough</td></tr><tr><td>2024.7.25</td><td>91.0</td><td>4.18</td><td>6.78</td><td>feel good</td></tr><tr><td>2024.7.26</td><td>90.9</td><td>3.79</td><td>8.48</td><td></td></tr><tr><td>2024.7.27</td><td>92.2</td><td>5.01</td><td>0</td><td></td></tr><tr><td>2024.7.28</td><td>91.2</td><td>0</td><td>20.7</td><td></td></tr><tr><td>2024.7.29</td><td>91.3</td><td></td><td></td><td></td></tr><tr><td>2024.7.30</td><td></td><td></td><td></td><td></td></tr><tr><td>2024.7.31</td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Weight-chart"><a href="#Weight-chart" class="headerlink" title="Weight chart"></a>Weight chart</h3><table><thead><tr><th>Date</th><th>Weight (kg)</th><th>Running (km)</th><th>Cycling (km)</th><th>remark</th></tr></thead><tbody><tr><td>2024.7.23</td><td>93.2</td><td>2.34</td><td>8.11</td><td>have a little cold</td></tr><tr><td>2024.7.24</td><td>92.3</td><td>4.42</td><td>14.4</td><td>still have a little cough</td></tr><tr><td>2024.7.25</td><td>91.0</td><td>4.18</td><td>6.78</td><td>feel good</td></tr><tr><td>2024.7.26</td><td>90.9</td><td>3.79</td><td>8.48</td><td></td></tr><tr><td>2024.7.27</td><td>92.2</td><td>5.01</td><td>0</td><td></td></tr><tr><td>2024.7.28</td><td>91.2</td><td>0</td><td>20.7</td><td></td></tr><tr><td>2024.7.29</td><td>91.3</td><td>5.49</td><td>12.2</td><td></td></tr><tr><td>2024.7.30</td><td>91.2</td><td>3.01</td><td></td><td></td></tr><tr><td>2024.7.31</td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
     
     
     <categories>
